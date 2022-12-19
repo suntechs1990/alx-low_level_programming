@@ -1,23 +1,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return:Always 0
+ *swap_int - swaps the values of two integers
+ *@a: integer to swap
+ *@b: integer to swap
  */
-int main(void)
+void swap_int(int *a, int *b)
 {
-	int a, b;
+	int temp;
 
-	printf("Enter Value of a ");
-	scanf("%d", &a);
-	printf("\nEnter Value of b ");
-	scanf("%d", &b);
-
-	int temp = a;
-
-	a = b;
-	b = temp;
-
-	printf("\nAfter Swapping: a = %d, b = %d", a, b);
-	return (0);
+	temp = *a;
+	*a = *b;
+	*b = temp
 }
