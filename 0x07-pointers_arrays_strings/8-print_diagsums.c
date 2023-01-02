@@ -28,4 +28,4 @@ void print_diagsums(int *a, int size)
 	sum2 += a[j];
 	j = j + size - 1;
 	}
-
+}
